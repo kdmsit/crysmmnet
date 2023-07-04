@@ -35,7 +35,7 @@ To train CrysMMNet use following commands :
 - <b>JARVIS-DFT(2021.8.18) :</b> 
   Following  previous state-of-the-art works, we choose six crystal properties from JARVIS-DFT dataset including formation energy, bandgap (OPT), bandgap
   (MBJ), total energy, bulk moduli, and shear moduli for the  downstream property prediction task. We use 80%,10%, and  10% train, validation, and test split for all the properties as
-  used by ALIGNN. You can refer to the following commands to train CrysMMNet using Jarvis Dataset :
+  used by ALIGNN. You can refer to the following commands in `src/` repository to train CrysMMNet using Jarvis Dataset :
     ```bash
     python train_folder.py --root_dir '../dataset/' --train_ratio 0.8 --val_ratio 0.1 --test_ratio 0.1 --dataset 'Jarvis' --property 'fe'  --epochs 1000 --batch_size 64 --resume 0
     python train_folder.py --root_dir '../dataset/' --train_ratio 0.8 --val_ratio 0.1 --test_ratio 0.1 --dataset 'Jarvis' --property 'total_energy'  --epochs 1000 --batch_size 64 --resume 0
@@ -47,7 +47,7 @@ To train CrysMMNet use following commands :
 - <b>Material Project (MP 2018.6.1) :</b> 
   Following  previous state-of-the-art works, we choose four crystal properties from Material Project dataset namely formation energy, bandgap, bulk moduli, and shear moduli. For formation energy and
 bandgap, we use 60000, 5000, and 4239 crystals as train,  validation, and test split as used by ALIGNN, whereas use  4664, 393, and 393 crystals as train, validation, and test split
-for bulk and shear moduli as used by GATGNN. You can refer to the following commands to train CrysMMNet using Material Project Dataset :
+for bulk and shear moduli as used by GATGNN. You can refer to the following commands in `src/` repository to train CrysMMNet using Material Project Dataset :
     ```bash
     python train_folder.py --root_dir '../dataset/' --n_train 60000 --n_val 5000 --n_test 4132 --dataset 'MP' --property 'formation_energy'  --epochs 1000 --batch_size 64 --resume 0
     python train_folder.py --root_dir '../dataset/' --n_train 60000 --n_val 5000 --n_test 4132 --dataset 'MP' --property 'band_gap'  --epochs 1000 --batch_size 64 --resume 0
