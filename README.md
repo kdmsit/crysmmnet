@@ -27,7 +27,12 @@ pip install -r requirements.txt
 ## Usage
 ### Multi-Modal Dataset
 We used robocrystallographer to curate textual dataset of two popular materials databases (Graph-based), Material Project (MP 2018.6.1) and JARVIS-DFT(2021.8.18), 
-containing textual descriptions of each material of those databases. You can find the dataset in the repository: `dataset/`
+containing textual descriptions of each material of those databases. 
+
+Ypu can download the dataset from the following link :
+https://figshare.com/articles/dataset/CrysMMNet_data/23643669
+
+Unzip the dataset.zip file and keep in the repository: `dataset/`
 
 ### How to use CrysMMNet for Crystal Property Prediction
 
