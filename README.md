@@ -16,12 +16,26 @@ The following paper describes the details of the CrysGNN framework: <br/>
   - [How to use CrysMMNet for Crystal Property Prediction](#how-to-use-crysmmnet)
 - [How to cite](#how-to-cite)
 
-##  Requirements
+##  Environment Setup
 
-The package requirements are listed in requirements.txt file. Create a virtual environment and run the following command to install dependencies in your virtual environment:
+The package requirements are listed in the requirements.txt file. Create a virtual environment and run the following command to install dependencies in your virtual environment:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Or you can manually set the environments following the below steps
+
+Assuming Cuda version is 11.8
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install -c dglteam/label/cu118 dgl
+pip install jarvis-tools==2022.9.16
+pip install pytorch-ignite
+pip install pandas
+pip install transformers
+pip3 install -U scikit-learn scipy matplotlib
+pip install pydantic==1.8.1
 ```
 
 ## Usage
