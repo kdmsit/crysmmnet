@@ -15,9 +15,9 @@ import torch.profiler
 from torch import nn
 from tqdm import tqdm
 
-from src_alignn import data, models
-from src_alignn.config import TrainingConfig
-from src_alignn.train import group_decay, setup_optimizer
+from src import data, models
+from src.config import TrainingConfig
+from src.train import group_decay, setup_optimizer
 
 device = "cpu"
 if torch.cuda.is_available():
